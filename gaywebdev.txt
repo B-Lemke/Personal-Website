@@ -1,0 +1,11 @@
+<style>
+
+</style>
+
+<div>
+    <span> G </span>
+
+    <span> W </span>
+
+    <span> D </span>
+</div>

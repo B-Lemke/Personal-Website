@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-content {
+
+            background: #2d3436;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            vertical-align: center;
+            width: 100%;
+            z-index: 10;
+
+        }
+
+        header,
+        body,
+        html,
+        main {
+            max-width: 100vw;
+            overflow-x: hidden;
+            width: 100vw;
+        }
+
+        .header-content a {
+            color: #dfe6e9;
+            margin: 10px;
+            font-size: 1.5em;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        main>div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+
+        #parallax {
+            background-image: url(tobydesk.png);
+            background-size: cover;
+            background-position-y: -75px;
+            position: relative;
+
+        }
+
+        #hero-image-background {
+            position: absolute;
+            top: 30%;
+            left: 20%;
+            width: 20%;
+            height: 20%;
+            background: #2d3436;
+            padding: 10px;
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+            opacity: .9;
+        }
+
+        #hero-image-content {
+            position: absolute;
+            color: #FFEAA7;
+            top: 30%;
+            left: 20%;
+            width: 20%;
+            height: 20%;
+            opacity: 1;
+            filter: blur(0px);
+            -webkit-filter: blur(0px);
+            padding: 10px;
+        }
+
+        main div:nth-child(3) {
+            background: tomato;
+        }
+
+        #hero-image-content h2 {
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: .2em;
+            font-size: 5em;
+        }
+
+        #hero-image-content p {
+            width: 100%;
+            font-size: 2em;
+            color: #00CEC9;
+        }
+
+        #hero-image-content strong {
+            color: #FF7675;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="header-content">
+            <a class="gwd-logo" href="#">
+                <div id="logo-g"> G </div>
+                <div id="logo-a" class="invis-at-first"> A </div>
+                <div id="logo-y" class="invis-at-first"> Y </div>
+                <div id="logo-w"> W </div>
+                <div id="logo-e" class="invis-at-first"> E </div>
+                <div id="logo-b" class="invis-at-first"> B </div>
+                <div id="logo-d"> D </div>
+                <div id="logo-e2" class="invis-at-first"> E </div>
+                <div id="logo-v" class="invis-at-first"> V </div>
+
+                <p>Broderick Lemke</p>
+            </a>
+            <div class="links">
+                <a href="www.google.com">About</a>
+                <a href="www.google.com">Blog</a>
+                <a href="www.google.com">Portfolio</a>
+                <a href="www.google.com">Contact</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="parallax">
+            <div id="hero-image-background">
+
+            </div>
+            <div id="hero-image-content">
+                <div>
+                    <h2>Hello!</h2>
+                </div>
+                <div>
+                    <p>My name is <strong>Broderick</strong> and I'm a programmer, musician, artist and blogger in the <strong>Greater Chicago
+                        Area</strong></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Hello 2</h2>
+        </div>
+        <div>
+            <h2>HEllo 3</h2>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </main>
+</body>
+<script>
+    const parallax = document.getElementById('parallax');
+    console.log(parallax);
+    window.addEventListener('scroll', function () {
+        let offset = window.pageYOffset;
+
+        parallax.style.backgroundPositionY = offset * 0.7 - 75 + "px";
+        parallax.style.backgroundPositionX = offset * 0.3 * (-1) + "px";
+        console.log(offset);
+    });
+</script>
+
+</html>
