@@ -1,5 +1,11 @@
-@import 'variables';
-@import 'logoStyles';
-body {
-    background: $bold-color;
-}
+// Import BootStrap 
+@import "../node_modules/bootstrap-scss/bootstrap.scss";
+
+@import 'sass/variables';
+
+
+
+@import 'sass/header/logoStyles';
+@import 'sass/header/headermain';
+
+

@@ -1,7 +1,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles/css/style.css">
 
     <style>
         body,
@@ -54,7 +55,7 @@
         }
 
         #parallax {
-            background-image: url(tobydesk.png);
+            background-image: url(../assets/images/tobydesk.png);
             background-size: cover;
             background-position-y: -75px;
             position: relative;
@@ -65,13 +66,14 @@
             position: absolute;
             top: 30%;
             left: 20%;
-            width: 20%;
-            height: 20%;
+            width: 40vh;
+            height: 30vh;
             background: #2d3436;
             padding: 10px;
             filter: blur(2px);
             -webkit-filter: blur(2px);
             opacity: .9;
+            box-sizing: border-box;
         }
 
         #hero-image-content {
@@ -79,33 +81,173 @@
             color: #FFEAA7;
             top: 30%;
             left: 20%;
-            width: 20%;
-            height: 20%;
+            width: 40vh;
+            height: 30vh;
             opacity: 1;
             filter: blur(0px);
             -webkit-filter: blur(0px);
-            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         main div:nth-child(3) {
             background: tomato;
         }
+        
 
         #hero-image-content h2 {
             width: 100%;
             margin-top: 0;
-            margin-bottom: .2em;
-            font-size: 5em;
+            margin-bottom: 0;
+            font-size: 8vh;
+            padding: 0 2vh 1vh 2vh;
         }
 
         #hero-image-content p {
             width: 100%;
-            font-size: 2em;
+            font-size: 3vh;
             color: #00CEC9;
+            margin: 0;
+            padding: 0 2vh;
+            box-sizing: border-box;
         }
 
         #hero-image-content strong {
             color: #FF7675;
+        }
+
+        @media only screen and (max-width: 400px) {
+
+            #hero-image-background {
+                width: 90vw;
+                height: 100vw;
+                top: 10vh;
+                left: 5vw;
+                
+            }
+
+            #hero-image-content {
+                width: 90vw;
+                height: 100vw;
+                top: 10vh;
+                left: 5vw;
+                box-sizing: border-box;
+            }
+
+            #hero-image-content p {
+                font-size: 8vw;
+            }
+
+            #hero-image-content h2 {
+                font-size: 20vw;
+            }
+        }
+
+        @media only screen and (min-width: 401px) and (max-width: 600px) {
+
+            #hero-image-background {
+                width: 40vh;
+                left: 5vh;
+                top: 20vh;
+            }
+
+            #hero-image-content {
+                width: 40vh;
+                left: 5vh;
+                top: 20vh;
+            }
+
+            #hero-image-content p {
+                font-size: 3vh;
+            }
+
+            #hero-image-content h2 {
+                font-size: 9vh;
+                padding-bottom: 0;
+            }
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 1200px) {
+
+            #hero-image-background {
+                width: 50vh;
+                height: 30vh;
+                left: 5vh;
+            }
+
+            #hero-image-content {
+                width: 50vh;
+                height: 30vh;
+                left: 5vh
+            }
+
+            #hero-image-content p {
+                font-size: 3.6vh;
+
+            }
+
+            #hero-image-content h2 {
+                font-size: 8vh;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 1200px) {
+
+            #hero-image-background {
+                width: 50vh;
+                height: 30vh;
+                left: 5vh;
+            }
+
+            #hero-image-content {
+                width: 50vh;
+                height: 30vh;
+                left: 5vh
+            }
+
+            #hero-image-content p {
+                font-size: 3vh;
+
+            }
+
+            #hero-image-content h2 {
+                font-size: 8vh;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        @media only screen and (max-height: 800px) and (min-width: 600px) {
+
+            #hero-image-background {
+                width: 60vh;
+                height: 50vh;
+                top: 15vh;
+                left: 15vh;
+            }
+
+            #hero-image-content {
+                width: 60vh;
+                height: 50vh;
+                top: 15vh;
+                left: 15vh;
+
+            }
+
+            #hero-image-content p {
+                font-size: 4.5vh;
+
+            }
+
+            #hero-image-content h2 {
+                font-size: 12vh;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
         }
     </style>
 
@@ -149,8 +291,9 @@
                     <h2>Hello!</h2>
                 </div>
                 <div>
-                    <p>My name is <strong>Broderick</strong> and I'm a programmer, musician, artist and blogger in the <strong>Greater Chicago
-                        Area</strong></p>
+                    <p>My name is <strong>Broderick</strong> and I'm a programmer, musician, artist and blogger in the
+                        <strong>Greater Chicago
+                            Area</strong></p>
                 </div>
             </div>
         </div>
