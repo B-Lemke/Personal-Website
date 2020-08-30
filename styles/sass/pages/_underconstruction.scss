@@ -6,4 +6,8 @@
     img {
         object-fit: contain;
     }
+
+    @include media-breakpoint-down(xs) {
+        height: 60vh;
+    }
 }
