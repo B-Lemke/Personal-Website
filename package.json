@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/B-Lemke/Personal-Website#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "autoprefixer": "^9.8.6",
     "bootstrap": "^4.5.2",
     "bootstrap-scss": "^4.5.2",

@@ -1,35 +1,38 @@
 #logo- {
-    &g{
+    &g {
         background: #ff7675;
     }
-    &a{
+    &a {
         background: #fd79a8;
     }
-    &y{
+    &y {
         background: #fab1a0;
     }
-    &w{
+    &w {
         background: #ffeaa7;
     }
-    &e{
+    &e {
         background: #00b894;
     }
-    &b{
+    &b {
         background: #55efc4;
     }
-    &d{
+    &d {
         background: #00cec9;
     }
-    &e2{
+    &e2 {
         background: #74b9ff;
     }
-    &v{
+    &v {
         background: #6c5ce7;
     }
 }
 
 .gwd-logo {
     margin-left: 20px;
+    @include media-breakpoint-down(sm) {
+        margin-left: 0;
+    }
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -46,6 +49,11 @@
         font-size: 1em;
         line-height: 1em;
         height: 1em;
+        @include media-breakpoint-down(sm) {
+            padding: 5px;
+            width: 11px;
+            font-size: 0.5em;
+        }
     }
     & p {
         margin: auto 0 auto 10px;
@@ -53,6 +61,10 @@
         color: #dfe6e9;
         border-left: 1px solid #636e72;
         padding-left: 10px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 1em;
+        }
     }
 }
 
@@ -61,19 +73,18 @@ div.invis-at-first {
     padding: 0;
     overflow: hidden;
 }
+
 @include media-breakpoint-up(lg) {
     // Styles
     div.invis-at-first {
-        transition: width .5s ease-out 0s, padding-right .5s ease-out .5s, padding-left .5s ease-out .5s, padding-top 0s ease-out 3s, padding-bottom 0s ease-out 3s;
+        transition: width 0.5s ease-out 0s, padding-right 0.5s ease-out 0.5s, padding-left 0.5s ease-out 0.5s,
+            padding-top 0s ease-out 3s, padding-bottom 0s ease-out 3s;
     }
-    
+
     .gwd-logo:hover div.invis-at-first {
         width: 22px;
         padding: 10px;
-        transition: width .5s ease-out 0s, padding-right .5s ease-out .5s, padding-left .5s ease-out .5s, padding-top 0s ease-out 0s, padding-bottom 0s ease-out 0s;
+        transition: width 0.5s ease-out 0s, padding-right 0.5s ease-out 0.5s, padding-left 0.5s ease-out 0.5s,
+            padding-top 0s ease-out 0s, padding-bottom 0s ease-out 0s;
     }
-    
-  }
-
-
-
+}

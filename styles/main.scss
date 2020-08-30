@@ -4,10 +4,14 @@
 // Import BootStrap 
 @import "../node_modules/bootstrap-scss/bootstrap.scss";
 
-
+  
+@import 'sass/layout/layout';
 
 
 
 @import 'sass/header/logoStyles';
 @import 'sass/header/headermain';
+@import 'sass/footer/footer';
 
+
+@import 'sass/pages/pages';
