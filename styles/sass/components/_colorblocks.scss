@@ -1,0 +1,56 @@
+.color-block {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &-salmon {
+        background-color: $salmon;
+    }
+    &-pink {
+        background-color: $pink;
+    }
+    &-orange {
+        background-color: $orange;
+    }
+    &-yellow {
+        background-color: $yellow;
+    }
+    &-pale-yellow {
+        background-color: $pale-yellow;
+    }
+    &-green {
+        background-color: $green;
+    }
+    &-mint {
+        background-color: $mint;
+    }
+    &-seafoam {
+        background-color: $seafoam;
+    }
+    &-blue {
+        background-color: $blue;
+    }
+    &-purple {
+        background-color: $purple;
+    }
+    &-light-purple{
+        background-color: $light-purple;
+    }
+    &-light {
+        background-color: $light;
+    }
+    &-dark {
+        background-color: $dark;
+        color: $light;
+    }
+}
+
+.color-block-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

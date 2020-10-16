@@ -1,0 +1,131 @@
+$browser-context: 16; // Default
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+  }
+
+$title-font-size: 2em;
+//14px converted to em
+$title-padding: 0.875em;
+@debug $title-font-size + $title-padding;
+
+
+.title {
+    font-weight: bold;
+    width: 70%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: $title-font-size;
+    padding: $title-padding;
+
+    &-mono{
+        font-family: 'Roboto Mono';
+    }
+
+    &-bars{
+        background-color: $dark;
+        color: $bright-color;
+        position:relative;
+        box-shadow: $box-shadow-medium;
+        
+        &:before {
+            content: '';
+            position: absolute;
+            background-color: $calm-color;
+            width: 105%;
+            top: 10%;
+            left: -2.5%;
+            margin: 0;
+            height: 80%;
+            z-index: -1;
+            box-shadow: $box-shadow-medium;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            background-color: $bold-color;
+            width: 110%;
+            top: 15%;
+            left: -5%;
+            margin: 0;
+            height: 70%;
+            z-index: -2;
+            box-shadow: $box-shadow-medium;
+        }
+    }
+
+    &-stacked {
+        background-color: $dark;
+        color: $bright-color;
+        margin: 50px auto;
+        height: auto;
+        box-shadow:  $box-shadow-medium,
+            -10px -10px $bold-color,
+            -10px -10px 6px rgba(0,0,0,0.16), -10px -10px 6px rgba(0,0,0,0.23),
+            -20px -20px $calm-color,
+            -20px -20px 6px rgba(0,0,0,0.16), -20px -20px 6px rgba(0,0,0,0.23),
+            -30px -30px $dark,
+            -30px -30px 6px rgba(0,0,0,0.16), -30px -30px 6px rgba(0,0,0,0.23),
+            -40px -40px $bold-color,
+            -40px -40px 6px rgba(0,0,0,0.16), -40px -40px 6px rgba(0,0,0,0.23);
+        &:hover {
+                animation: stacked-shuffle 3s ease-in-out infinite;
+        }
+    }
+}
+
+
+
+@keyframes stacked-shuffle {
+    0% {
+      
+        box-shadow:  $box-shadow-medium,
+        -10px -10px $bold-color,
+        -10px -10px 6px rgba(0,0,0,0.16), -10px -10px 6px rgba(0,0,0,0.23),
+        -20px -20px $calm-color,
+        -20px -20px 6px rgba(0,0,0,0.16), -20px -20px 6px rgba(0,0,0,0.23),
+        -30px -30px $bright-color,
+        -30px -30px 6px rgba(0,0,0,0.16), -30px -30px 6px rgba(0,0,0,0.23),
+        -40px -40px $bold-color,
+        -40px -40px 6px rgba(0,0,0,0.16), -40px -40px 6px rgba(0,0,0,0.23);
+    }
+    33% {
+      
+        box-shadow:  $box-shadow-medium,
+        -10px -10px $calm-color,
+        -10px -10px 6px rgba(0,0,0,0.16), -10px -10px 6px rgba(0,0,0,0.23),
+        -20px -20px $bright-color,
+        -20px -20px 6px rgba(0,0,0,0.16), -20px -20px 6px rgba(0,0,0,0.23),
+        -30px -30px $bold-color,
+        -30px -30px 6px rgba(0,0,0,0.16), -30px -30px 6px rgba(0,0,0,0.23),
+        -40px -40px $calm-color,
+        -40px -40px 6px rgba(0,0,0,0.16), -40px -40px 6px rgba(0,0,0,0.23);
+    }
+    66% {
+      
+        box-shadow:  $box-shadow-medium,
+        -10px -10px $bright-color,
+        -10px -10px 6px rgba(0,0,0,0.16), -10px -10px 6px rgba(0,0,0,0.23),
+        -20px -20px $bold-color,
+        -20px -20px 6px rgba(0,0,0,0.16), -20px -20px 6px rgba(0,0,0,0.23),
+        -30px -30px $calm-color,
+        -30px -30px 6px rgba(0,0,0,0.16), -30px -30px 6px rgba(0,0,0,0.23),
+        -40px -40px $bright-color,
+        -40px -40px 6px rgba(0,0,0,0.16), -40px -40px 6px rgba(0,0,0,0.23);
+    }
+    100% {
+      
+        box-shadow:  $box-shadow-medium,
+        -10px -10px $bold-color,
+        -10px -10px 6px rgba(0,0,0,0.16), -10px -10px 6px rgba(0,0,0,0.23),
+        -20px -20px $calm-color,
+        -20px -20px 6px rgba(0,0,0,0.16), -20px -20px 6px rgba(0,0,0,0.23),
+        -30px -30px $bright-color,
+        -30px -30px 6px rgba(0,0,0,0.16), -30px -30px 6px rgba(0,0,0,0.23),
+        -40px -40px $bold-color,
+        -40px -40px 6px rgba(0,0,0,0.16), -40px -40px 6px rgba(0,0,0,0.23);
+    }
+    
+  }
+  
+  
+  

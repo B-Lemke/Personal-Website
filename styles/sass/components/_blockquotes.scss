@@ -1,0 +1,42 @@
+.blockquote {
+    width: 100%;
+    padding: 60px 5%;
+    background: $calm-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &-calm {
+        background-color: $calm-color;
+    }
+
+    &-bright {
+        background-color: $bright-color;
+    }
+
+    &-bold {
+        background-color: $bold-color;
+    }
+
+    &-image {
+        margin-right: 10%;
+        display: block;
+        img {
+            min-width: 200px;
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: $box-shadow-dark;
+        }
+    }
+
+    &-quote {
+        font-weight: bold;
+        line-height: 1.5em;
+        color: #fff;
+        .blockquote-attribution {
+            margin-top: 10px;
+            text-align: right;
+        }
+    }
+}
