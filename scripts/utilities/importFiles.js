@@ -1,7 +1,7 @@
 function LoadHeadScriptsAndLinks() {
     document.head.innerHTML += `
-    <link rel="stylesheet" type="text/css" href="/styles/css/style.css">
-    <link href="/assets/font-awesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../styles/css/style.css">
+    <link href="../../assets/font-awesome/css/all.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
