@@ -7718,7 +7718,7 @@ main {
   position: relative; }
 
 #parallax {
-  background-image: url(../../../assets/images/homepage/tobydesk.png);
+  background-image: url(../../assets/images/homepage/tobydesk.png);
   background-size: cover;
   position: relative;
   height: 100vh;
