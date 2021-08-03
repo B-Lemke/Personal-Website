@@ -8,6 +8,10 @@ $title-font-size: 2em;
 $title-padding: 0.875em;
 @debug $title-font-size + $title-padding;
 
+.title-container {
+    z-index: 10 !important;
+    position: relative;
+}
 
 .title {
     font-weight: bold;

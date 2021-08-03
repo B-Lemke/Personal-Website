@@ -1,42 +1,61 @@
 .blockquote {
-    width: 100%;
-    padding: 60px 5%;
-    background: $calm-color;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  padding: 60px 5%;
+  background: $primary;
+  color: #fff;
+  margin-bottom: 0;
 
-    &-calm {
-        background-color: $calm-color;
-    }
+  &-primary-dark {
+    background-color: $primary-dark;
+  }
 
-    &-bright {
-        background-color: $bright-color;
-    }
+  &-primary {
+      background-color: $primary;
+      color: $dark;
+  }
 
-    &-bold {
-        background-color: $bold-color;
-    }
+  &-info {
+    background-color: $info;
+    color: $dark;
+  }
 
-    &-image {
-        margin-right: 10%;
-        display: block;
-        img {
-            min-width: 200px;
-            width: 100%;
-            border-radius: 50%;
-            box-shadow: $box-shadow-dark;
-        }
-    }
+  &-secondary {
+    background-color: $secondary;
+    color: $dark;
+  }
 
-    &-quote {
-        font-weight: bold;
-        line-height: 1.5em;
-        color: #fff;
-        .blockquote-attribution {
-            margin-top: 10px;
-            text-align: right;
-        }
+  &-secondary-dark {
+    background-color: $secondary-dark;
+    color: $white;
+  }
+}
+
+.blockquote-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+
+  .blockquote-image {
+    margin-right: 10%;
+    display: block;
+    img {
+      min-width: 200px;
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: $box-shadow-dark;
     }
+  }
+
+  .blockquote-quote {
+    font-weight: bold;
+    line-height: 1.5em;
+
+    .blockquote-attribution {
+      margin-top: 10px;
+      text-align: right;
+    }
+  }
 }

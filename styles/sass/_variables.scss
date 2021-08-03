@@ -2,7 +2,6 @@ $calm-color: #00cec9;
 $bold-color: #ff7675;
 $bright-color: #ffeaa7;
 
-
 $primary: #00cec9;
 $secondary: #ff7675;
 $success: #00b894;
@@ -11,7 +10,15 @@ $warning: #e17055;
 $danger: #d63031;
 $light: #dfe6e9;
 $dark: #2d3436;
+$white: #fff;
 
+$primary-dark: darken($primary, 8%);
+$info-dark: darken($info, 10%);
+$secondary-dark: darken($secondary, 5%);
+
+$primary-light: lighten($primary, 10%);
+$info-light: lighten($info, 10%);
+$secondary-light: lighten($secondary, 10%);
 
 $salmon: #ff7675;
 $pink: #fd79a8;
@@ -25,8 +32,11 @@ $purple: #6c5ce7;
 $light-purple: #a29bfe;
 $pale-yellow: #fcf8e8;
 
-$box-shadow-light: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-$box-shadow-medium:  0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-$box-shadow-dark: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-$box-shadow-darker: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-$box-shadow-darkest: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+$box-shadow-light: 0 14px 28px rgba(0, 0, 0, 0.25),
+  0 10px 10px rgba(0, 0, 0, 0.22);
+$box-shadow-medium: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+$box-shadow-dark: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+$box-shadow-darker: 0 14px 28px rgba(0, 0, 0, 0.25),
+  0 10px 10px rgba(0, 0, 0, 0.22);
+$box-shadow-darkest: 0 19px 38px rgba(0, 0, 0, 0.3),
+  0 15px 12px rgba(0, 0, 0, 0.22);
