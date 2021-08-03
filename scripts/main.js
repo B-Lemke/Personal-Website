@@ -5,6 +5,7 @@ import './utilities/random.js';
 import {ReplaceCurrentYear} from './misc/replaceCurrentYear.js';
 import {ReplacePlaceholderEmails} from './misc/replacePlaceholderEmails.js';
 import {LoadHeadScriptsAndLinks} from './utilities/importFiles.js'
+import {MoveShapes} from './misc/moveHomepageShapes.js'
 
 //Load in CSS and JS files
 LoadHeadScriptsAndLinks();
@@ -13,3 +14,4 @@ LoadHeadScriptsAndLinks();
 ReplacePlaceholderEmails();
 ReplaceCurrentYear();
 
+MoveShapes();
