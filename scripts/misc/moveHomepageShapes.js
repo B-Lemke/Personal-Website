@@ -36,6 +36,9 @@ function MoveShapes() {
           rotate: createKeyframes(function () {
             return anime.random(-180, 180);
           }),
+          scale: createKeyframes(function () {
+            return anime.random(.5, 2);
+          })
         },
         0
       );
@@ -46,7 +49,7 @@ let lastX = 0;
 
   for (var i = 0; i < shapeEls.length; i++) {    
     // set random sizes
-    let size = anime.random(100, 500) + "px";
+    let size = anime.random(100, 350) + "px";
     shapeEls[i].style.width = size;
     shapeEls[i].style.height = size;
 
