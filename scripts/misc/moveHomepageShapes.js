@@ -1,6 +1,6 @@
 function MoveShapes() {
   let shapeEls = document.querySelectorAll(".svg-shape");
-  var easings = ["easeInOutQuad", "easeInOutCirc", "easeInOutSine"];
+  var easings = ["linear"];
 
 
 
@@ -37,8 +37,8 @@ function MoveShapes() {
   for (var i = 0; i < shapeEls.length; i++) {
       
   // Randomize Shape placement and start the animations
-  shapeEls[i].style.top = anime.random(0, 99) + '%';
-  shapeEls[i].style.left = anime.random(0, 99) + '%';
+  shapeEls[i].style.top = anime.random(-10, 90) + '%';
+  shapeEls[i].style.left = anime.random(-10, 80) + '%';
     animateShape(shapeEls[i]);
   }
 }
