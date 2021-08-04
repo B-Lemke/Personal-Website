@@ -226,29 +226,76 @@
         </div>
       </div>
 
-   
-        <object class="svg-shape" data="../../assets/images/drawings/abstract.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/abstract2.svg" type="image/svg+xml"></object>   
-        <object class="svg-shape" data="../../assets/images/drawings/curvystack.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/d20.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/eyeguy.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/hand.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/munch.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/pretzel.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/pyramid.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/sitting.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/skinnyboi.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/spiral.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/stack.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/stairs.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/swoosh.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/tobby1.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/tobby2.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/traingles.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/x1.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/x2.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/zag.svg" type="image/svg+xml"></object>
-        <object class="svg-shape" data="../../assets/images/drawings/zig.svg" type="image/svg+xml"></object>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#abstract"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#abstract2"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#curvystack"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#d20"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#eyeguy"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#hand"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#munch"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#pretzel"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#pyramid"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#sitting"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#skinnyboi"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#spiral"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#stack"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#stairs"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#swoosh"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#tobby1"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#tobby2"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#traingles"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#whoishe"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#x1"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#x2"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#zag"></use>
+      </svg>
+      <svg class="svg-shape">
+        <use xlink:href="../../assets/images/homepage/sprites.svg#zig"></use>
+      </svg>
+
 
     </main>
 
@@ -344,11 +391,9 @@
 
     <script>
       const parallax = document.getElementById("parallax");
-      console.log(parallax);
+
       window.addEventListener("scroll", function () {
         let offset = window.pageYOffset;
-
-        console.log(parallax.style.backgroundPositionY, offset);
         if (offset > 70) {
           parallax.style.backgroundPositionY = offset * 0.7 - 70 + "px";
         } else {

@@ -7902,10 +7902,11 @@ main {
 .svg-shape {
   z-index: 1;
   position: absolute;
-  opacity: 21%;
-  height: 300px;
-  width: 300px;
+  fill: #c6c3b7;
   overflow: hidden; }
+
+.svg-shape svg path {
+  fill: red !important; }
 
 .above-shapes {
   z-index: 2;

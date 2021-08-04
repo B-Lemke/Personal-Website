@@ -8,25 +8,27 @@ main {
 header,
 body,
 html,
-main
-{
+main {
   overflow-x: hidden !important;
   width: 100%;
   background: $pale-yellow;
-  position:relative;
+  position: relative;
 }
 
 main {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
-
-
 
 .hero-header {
   background-color: $primary-dark;
   background: $primary-dark;
-background: radial-gradient(circle, $primary-dark 0%, $primary-dark 50%, $primary-light 100%);
-  z-index:2;
+  background: radial-gradient(
+    circle,
+    $primary-dark 0%,
+    $primary-dark 50%,
+    $primary-light 100%
+  );
+  z-index: 2;
   position: relative;
 }
 
@@ -39,7 +41,7 @@ background: radial-gradient(circle, $primary-dark 0%, $primary-dark 50%, $primar
   max-height: 800px;
   margin: 0 auto;
   background-repeat-y: no-repeat;
-  box-shadow: $box-shadow-darkest
+  box-shadow: $box-shadow-darkest;
 }
 
 #hero-image-background {
@@ -217,8 +219,8 @@ background: radial-gradient(circle, $primary-dark 0%, $primary-dark 50%, $primar
 
 // Below Paralax
 .multi-class {
-    margin: 50px auto;
-    padding: 20px;
+  margin: 50px auto;
+  padding: 20px;
   background: $pale-yellow;
 
   position: relative;
@@ -238,7 +240,6 @@ background: radial-gradient(circle, $primary-dark 0%, $primary-dark 50%, $primar
   }
 
   .geek-blurb {
-      
     padding: 20px;
     background: $dark;
     box-shadow: $box-shadow-dark;
@@ -255,49 +256,48 @@ background: radial-gradient(circle, $primary-dark 0%, $primary-dark 50%, $primar
   }
 }
 
-@include media-breakpoint-down(md) { 
-    .geek-item {
-        max-width: 400px;
-        margin: auto;
+@include media-breakpoint-down(md) {
+  .geek-item {
+    max-width: 400px;
+    margin: auto;
+  }
+}
+
+// -------- What I do section
+
+.what-do-i-do {
+  background: $pale-yellow;
+  margin: 50px auto;
+
+  .main-image {
+    width: 900%;
+    box-shadow: $box-shadow-dark;
+    border-radius: 5px;
+  }
+  .image-gallery {
+    img {
+      max-width: 100%;
+      width: 90%;
+      margin: 10px auto;
+      display: block;
     }
-
- }
-
-
- // -------- What I do section
-
- .what-do-i-do {
-     background: $pale-yellow;
-     margin: 50px auto;
-
-    .main-image {
-        width: 900%;
-        box-shadow: $box-shadow-dark;
-        border-radius: 5px;
-    }
-    .image-gallery {
-        img {
-            max-width: 100%;
-            width: 90%;
-            margin: 10px auto;
-            display: block;
-        }
-    }
- }
+  }
+}
 
 // Shpes
 
- .svg-shape {
-     z-index: 1;
-     position: absolute;
-    opacity: 21%;
-     height: 300px;
-     width: 300px;
-     overflow: hidden;
- }
-
- .above-shapes {
-    z-index: 2;
-    position: relative;
+.svg-shape {
+  z-index: 1;
+  position: absolute;
+  fill: #c6c3b7;
+  overflow: hidden;
 }
 
+.svg-shape svg path {
+  fill: red !important;
+}
+
+.above-shapes {
+  z-index: 2;
+  position: relative;
+}
